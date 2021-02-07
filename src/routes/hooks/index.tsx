@@ -13,11 +13,11 @@ const HooksDemo: React.FC<IProps> = ({ history }) => {
 
   const addCount = () => {
     setCount(count + 1);
-  }
+  };
 
   const toHooks = () => {
     history.push('/app/class');
-  }
+  };
 
   return (
     <div className={styles.container}>
