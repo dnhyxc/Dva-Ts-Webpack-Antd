@@ -6,11 +6,11 @@ import styles from './index.less';
 
 interface ISelefProps {
   history: any;
-};
+}
 
 interface ISelfState {
   count: number;
-};
+}
 
 class ClassDemo extends React.Component<ISelefProps & DispatchProp, ISelfState> {
   constructor(props: ISelefProps & DispatchProp) {
@@ -18,25 +18,23 @@ class ClassDemo extends React.Component<ISelefProps & DispatchProp, ISelfState> 
     this.state = {
       count: 0,
     };
-  };
+  }
 
   componentDidMount() {
     console.log(this.props);
-  };
+  }
 
   addCount = () => {
     this.setState({
-      count: this.state.count + 1
-    })
+      count: this.state.count + 1,
+    });
   };
 
   componentDidUpdate() {
     this.addCount;
-  };
+  }
 
-  componentWillUnmount() {
-
-  };
+  // componentWillUnmount() { }
 
   toHooks = () => {
     this.props.history.push('/app/hooks');

@@ -27,8 +27,8 @@ const HooksDemo: React.FC<IProps> = ({ history }) => {
       </div>
       <Button type="primary" onClick={toHooks}>toClassDemo</Button>
     </div>
-  )
-}
+  );
+};
 
 export default connect((state: GlobalState) => ({
 

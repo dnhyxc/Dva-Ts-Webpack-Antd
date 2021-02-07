@@ -32,7 +32,7 @@ const homeModel: Model<IhomeModelState, GlobalState, IReducersPayloads, IEffects
   namespace: 'home',
   state: {
     userInfo: {},
-    timeData: {}
+    timeData: {},
   },
   reducers: {
     save(state, { payload }) {
@@ -61,7 +61,7 @@ const homeModel: Model<IhomeModelState, GlobalState, IReducersPayloads, IEffects
     *getProjectList({ payload }, { call, put }) {
       const res: Result<unknown> = yield call(Service.getProjectList);
       return res;
-    }
+    },
   },
 };
 

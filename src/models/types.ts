@@ -31,9 +31,9 @@ export type GlobalState = Readonly<{
 
 export interface Data {
   [key: string]: any;
-};
+}
 
 // onResult 回调函数接口
 export interface IOnResultCallBack<T> {
   onResult: (error: Error | null | string, data?: T) => void;
-};
+}

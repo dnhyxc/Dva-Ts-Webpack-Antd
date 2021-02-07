@@ -6,10 +6,10 @@ export interface ProjectResponse {
 }
 
 export interface ProjectParams {
-  currentPage?: number,
-  pageSize?: number,
-  projectShowType?: number,
-  scheduleId: string,
+  currentPage?: number;
+  pageSize?: number;
+  projectShowType?: number;
+  scheduleId: string;
 }
 
 interface addProjectParams {
