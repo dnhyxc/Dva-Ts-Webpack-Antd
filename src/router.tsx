@@ -38,7 +38,7 @@ const Routers: React.FC<IRoutersProps> = ({ history, app }) => {
                 />
               ))
             }
-            <Redirect to='/app/hooks' />
+            <Redirect to="/app/hooks" />
           </Switch>
         </App>
       </ConnectedRouter>
